@@ -1,21 +1,16 @@
-var gameSettings = {
-    palyerSpeed: 200,
-}
-
-var config = {
-    width: 256,
-    height: 272,
-    backgroundColor: 0x000000,
-    scene: [Scene1, Scene2],
-    pixelArt: true,
-    physics: {
-        default: "arcade",
-        arcade:{
-            debug: false
+window.onload = function (){
+    let config = {
+        width: 256,
+        height: 272,
+        backgroundColor: 0x000000,
+        scene: [Scene1, Scene2],
+        pixelArt: true,
+        physics: {
+            default: "arcade",
+            arcade:{
+                debug: false
+            }
         }
     }
-}
-
-window.onload = function() {
-    var game = new Phaser.Game(config);
+    let game = new Phaser.Game(config);
 }
